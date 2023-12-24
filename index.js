@@ -14,7 +14,7 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://classic-it-frontend.vercel.app/"],
+    origin: ["http://localhost:5173", "https://classic-it-frontend.vercel.app"],
     methods: "GET, POST, DELETE, PUT",
     credentials: true,
   })
@@ -60,5 +60,5 @@ app.get("/", (req, res) => {
 
 app.listen(5000, () => {
   connect();
-  console.log("Backend is connected");
+  console.log("Backend is connected right now");
 });
